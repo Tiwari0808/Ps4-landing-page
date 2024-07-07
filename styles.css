@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 5vw;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon {
+    width: 2vw;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #ff5ea2;
+}
+
+.main {
+    display: flex;
+    margin: 3rem 0 0 3rem;
+}
+
+.main .one h2 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+
+}
+
+.main .one h3 {
+    color: rgb(72, 70, 70);
+    margin-bottom: 0.4rem;
+
+}
+
+.main .one p {
+    color: rgb(143 137 137);
+    margin-bottom: 0.4rem;
+
+}
+
+.main .one h4 {
+    margin-left: 0.3rem;
+    margin-bottom: 1.4rem;
+}
+
+button {
+    width: 9vw;
+    padding: 0.8rem;
+    height: 7vh;
+    background: linear-gradient(to right, #ff469f, #ff6062);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    transition: width 0.5s;
+    /* text-align: start; */
+    /* font-size: 55px; */
+
+}
+
+button img {
+    display: none;
+}
+
+button:hover img {
+    display: inline-block;
+    /* margin-left: 1rem; */
+    width: 2rem;
+}
+
+button:hover {
+    width: 13vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.one::before {
+    content: "";
+    width: 1vw;
+    height: 190px;
+    background: linear-gradient(#ff469f, #ff6062);
+    position: absolute;
+    left: 9vw;
+    top: 160px;
+}
+
+.main .two {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.controller {
+    width: 90%;
+    object-fit: cover;
+    /* height: 60%; */
+    margin-top: -2rem;
+}
+
+.two .color-bg {
+    position: absolute;
+    background: linear-gradient(#ff469f, #ff6062);
+    z-index: -1;
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    transform:translateX(24vw);
+}
