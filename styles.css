@@ -28,6 +28,7 @@
 .menu-icon {
     width: 2vw;
     cursor: pointer;
+    display: none;
 }
 
 nav {
@@ -86,7 +87,7 @@ button {
     border: none;
     border-radius: 8px;
     color: white;
-    transition: width 0.5s;
+    transition: width 0.7s;
     /* text-align: start; */
     /* font-size: 55px; */
 
@@ -103,7 +104,7 @@ button:hover img {
 }
 
 button:hover {
-    width: 13vw;
+    width: 11vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,7 +117,7 @@ button:hover {
     background: linear-gradient(#ff469f, #ff6062);
     position: absolute;
     left: 9vw;
-    top: 160px;
+    /* top: 160px; */
 }
 
 .main .two {
@@ -124,13 +125,14 @@ button:hover {
     flex-basis: 60%;
     display: flex;
     align-items: center;
+    bottom: 2rem;
 }
 
 .controller {
     width: 90%;
     object-fit: cover;
     /* height: 60%; */
-    margin-top: -2rem;
+    /* margin-top: -2rem; */
 }
 
 .two .color-bg {
@@ -140,5 +142,163 @@ button:hover {
     border-radius: 20px 0 0 20px;
     height: 100%;
     width: 80%;
-    transform:translateX(24vw);
+    transform: translateX(27vw);
+}
+
+.add-btn {
+    /* display: flex; */
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    gap: 0.4rem;
+    /* margin-left: 2rem; */
+    /* margin-top: -2rem; */
+    width: 10vw;
+}
+
+.add-btn img {
+    width: 4vw;
+    cursor: pointer;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.social-links img {
+    width: 2vw;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    margin-top: 1.5rem;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width:700px) {
+    nav ul {
+        width: 100%;
+        background: linear-gradient(#ff469f, #ff6062);
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        border-radius: 8px;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 0.5vh;
+        /* color: white; */
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 7vw;
+    }
+
+    .logo {
+        width: 9vw;
+        cursor: pointer;
+        margin-bottom: vh;
+    }
+
+    #menulist {
+        overflow: hidden;
+        transition: 0.6s ease-in-out;
+        z-index: 2;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main .two {
+        margin-bottom: 4rem;
+    }
+
+    .main .one h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .add-btn {
+        /* display: flex; */
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        /* gap: rem; */
+        /* margin-left: 2rem; */
+        /* margin-top: -2rem; */
+        /* width: 10vw; */
+    }
+
+    .main .one h3 {
+        color: rgb(72, 70, 70);
+        margin-bottom: 0.4rem;
+        font-size: 15px;
+    }
+
+    .main .one p {
+        color: rgb(143 137 137);
+        margin-bottom: 0.4rem;
+        font-size: 10px;
+        /* margin-bottom: 6px; */
+        margin: 5px;
+    }
+
+    button {
+        width: 23vw;
+        padding: 0.8rem;
+        height: 7vh;
+        background: linear-gradient(to right, #ff469f, #ff6062);
+        border: none;
+        border-radius: 8px;
+        color: white;
+        transition: width 0.5s;
+        /* text-align: start; */
+        /* font-size: 55px; */
+    }
+
+    button:hover {
+        width: 35vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .add-btn img {
+        width: 8vw;
+        cursor: pointer;
+    }
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        /* cursor: pointer; */
+    }
+
+    .social-links img {
+        width: 6vw;
+        aspect-ratio: 3 / 2;
+        object-fit: contain;
+        cursor:pointer;
+
+    }
+    .main .two {
+        position: relative;
+        flex-basis: 60%;
+        display: flex;
+        align-items: center;
+        bottom: 0;
+    }
 }
